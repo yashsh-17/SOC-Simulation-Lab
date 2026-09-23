@@ -1,0 +1,34 @@
+# Incident Investigation Report: Unauthorized Access Attempt
+
+## Incident Summary
+- **Date / Time**: YYYY-MM-DD HH:MM (Lab Simulation)
+- **Severity**: Medium / High
+- **Detection Source**: Wazuh SIEM / Windows Endpoint Monitoring
+- **Analyst**: B.Tech Cyber Security Student / SOC Analyst
+
+---
+
+## 1. Detection & Triage
+- **Alert Trigger**: Wazuh rule fired indicating repeated failed login attempts or unusual process execution on the monitored Windows 10 endpoint (`192.168.56.101`).
+- **Initial Observation**: Multiple authentication failures followed by a suspicious script execution within the user profile directory.
+
+---
+
+## 2. Investigation Details
+- **Log Analysis**: Correlated event logs from the Wazuh server to trace the timeline of activity.
+- **Endpoint Inspection**: Verified process trees and network connections using endpoint telemetry.
+- **MITRE ATT&CK Mapping**: 
+  - Tactic: Credential Access / Execution
+  - Technique: Valid Accounts / Command and Scripting Interpreter
+
+---
+
+## 3. Containment & Remediation
+- Terminated the unauthorized process on the target endpoint.
+- Reviewed Wazuh active response and logging rules to ensure immediate visibility for similar future triggers.
+- Verified system integrity post-investigation.
+
+---
+
+## 4. Conclusion
+The simulated attack was successfully identified, triaged, and mapped using Wazuh SIEM telemetry. The lab environment confirmed effective detection and monitoring capabilities.
