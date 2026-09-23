@@ -74,3 +74,11 @@ This project was developed in an isolated virtual lab environment for educationa
 
 ### Wazuh Server Services
 ![Wazuh Server Services](screenshots/wazuh-server-services.png)
+
+## Lab Architecture & Components
+
+| Component | Purpose / Role | OS / Software | Configuration Details |
+
+| **Wazuh Server** | Centralized SIEM, log analysis, and threat detection | Ubuntu Server | Deployed in VirtualBox, collects telemetry and manages agents |
+| **Monitored Endpoint** | Endpoint security monitoring, activity simulation | Windows 10 | Wazuh Agent connected via private lab IP (`192.168.56.101`) |
+| **Security Testing Environment**| Simulating attacks and generating security alerts | Kali Linux | Isolated testing environment for validation |
