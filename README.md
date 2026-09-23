@@ -60,3 +60,17 @@ This is a self-directed cybersecurity project developed for practical SOC and de
 ## Disclaimer
 
 This project was developed in an isolated virtual lab environment for educational and defensive cybersecurity purposes.
+
+## Lab Dashboards
+
+### Wazuh Endpoints Dashboard
+![Wazuh Endpoints Dashboard](screenshots/wazuh-endpoints-dashboard.png)
+
+### Windows Agent Monitoring
+![Windows Agent Monitoring](screenshots/windows-agent-monitoring.png)
+
+### MITRE ATT&CK Dashboard
+![MITRE ATT&CK Dashboard](screenshots/mitre-attck-dashboard.png)
+
+### Wazuh Server Services
+![Wazuh Server Services](screenshots/wazuh-server-services.png)
