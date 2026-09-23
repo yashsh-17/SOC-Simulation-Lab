@@ -82,3 +82,11 @@ This project was developed in an isolated virtual lab environment for educationa
 | **Wazuh Server** | Centralized SIEM, log analysis, and threat detection | Ubuntu Server | Deployed in VirtualBox, collects telemetry and manages agents |
 | **Monitored Endpoint** | Endpoint security monitoring, activity simulation | Windows 10 | Wazuh Agent connected via private lab IP (`192.168.56.101`) |
 | **Security Testing Environment**| Simulating attacks and generating security alerts | Kali Linux | Isolated testing environment for validation |
+
+## SOC Monitoring & Investigation Workflow
+
+1. **Telemetry & Log Collection**: The Wazuh server continuously gathers system logs, registry changes, and security events from the Windows 10 endpoint agent via secure channels.
+2. **SIEM Alert Generation**: Security events trigger rules configured within Wazuh, surfacing alerts for suspicious activities or configuration changes on the dashboard.
+3. **Endpoint Activity Monitoring**: Real-time tracking of process execution, user activity, and system integrity to establish a baseline of normal behavior.
+4. **MITRE ATT&CK Mapping**: Alerts and simulated detections are correlated directly against the MITRE ATT&CK framework phases to identify attack techniques and tactics.
+5. **Reporting & Analysis**: Security findings, vulnerability data, and investigation results are compiled and analyzed (exported as a formal PDF report in the `reports/` directory).
