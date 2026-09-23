@@ -67,7 +67,7 @@ This project was developed in an isolated virtual lab environment for educationa
 ![Wazuh Endpoints Dashboard](screenshots/wazuh-endpoints-dashboard.png)
 
 ### Windows Agent Monitoring
-![Windows Agent Monitoring](screenshots/windows-agent-monitoring.png)
+![Windows Agent Monitoring](screenshots/wazuh-agent-monitoring.png)
 
 ### MITRE ATT&CK Dashboard
 ![MITRE ATT&CK Dashboard](screenshots/mitre-attck-dashboard.png)
